@@ -17,3 +17,32 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+
+
+#snow-top-layer {
+  will-change: transform;
+  transform: translateY(844px);
+  animation: bigger 25s infinite linear;
+}
+
+#snow-bottom-layer {
+  will-change: transform;
+  transform: translateY(844px);
+  animation: small 20s infinite linear;
+}
+
+@keyframes small {
+  100% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+}
+
+
+@keyframes bigger {
+ 100% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+}
