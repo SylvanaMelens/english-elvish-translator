@@ -104,9 +104,10 @@ button:hover {
 
 #snow-top-layer, #snow-bottom-layer {
   will-change: transform;
-  transform: translateY(500px);
-  max-height: 500px;
+  transform: translateY(200px);
+  max-height: 200px;
   overflow: hidden;
+  bottom: 0;
 }
 
 #snow-bottom-layer {
