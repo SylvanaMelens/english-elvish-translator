@@ -100,3 +100,34 @@ button:hover {
   font-size: 4em;
   margin-top: 1em;
 }
+
+
+#snow-top-layer, #snow-bottom-layer {
+  will-change: transform;
+  transform: translateY(500px);
+  max-height: 500px;
+  overflow: hidden;
+}
+
+#snow-bottom-layer {
+  animation: small 20s infinite linear;
+}
+
+#snow-top-layer {
+  animation: bigger 25s infinite linear;
+}
+
+@keyframes small {
+  100% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+}
+
+
+@keyframes bigger {
+ 100% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+}

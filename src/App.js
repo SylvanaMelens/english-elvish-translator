@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
+import {ReactComponent as ReactFirefly} from './firefly.svg'
 import './App.css'
+
+
 
 const App = () => {
   const [english, setEnglish] = useState({ text: '' })
@@ -69,7 +72,7 @@ const App = () => {
             <p>{errorMsg[1]}</p>
           </div>
           )}
-
+      <ReactFirefly />
     </div>
   )
 }
